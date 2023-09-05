@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<h1 style="color:blue">&emsp;&emsp;&emsp;&emsp;Registration Form</h1>
+
+<body>
+  <form target="_blank">
+    <table>
+      <tr>
+        <th><label for="fname">First name</label></th>
+        <td><input type="text" id="fname" name="fname" size="65"></td>
+      </tr>
+      <tr>
+        <th><label for="lname">Last name</label></th>
+        <td><input type="text" id="lname" name="lname" size="65"></td>
+      </tr>
+      <tr>
+        <th><label for="email">Email</label></th>
+        <td><input type="text" id="email" name="email" size="65"></td>
+      </tr>
+      <tr>
+        <th><label for="pwd">Password</label></th>
+        <td><input type="password" id="pwd" name="pwd" size="65"></td>
+      </tr>
+      <tr>
+        <th><label for="rpwd">Re-enter Password</label></th>
+        <td><input type="password" id="rpwd" name="rpwd" size="65"></td>
+      </tr>
+      <tr>
+        <th rowspan="2">Gender</th>
+        <td><input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label></td>
+      </tr>
+      <tr>
+        <th><label for="age">Age</label></th>
+        <td><input type="number" id="age" name="age" size="65"></td>
+      </tr>
+      <tr>
+        <th><label for="phone">Phone Number</label></th>
+        <td><input type="tel" id="phone" name="phone" size="65" maxlength="10"></td>
+      </tr>
+      <tr>
+        <th><label for="address">Address</label></th>
+        <td><textarea name="message" rows="5" cols="61"></textarea></td>
+      </tr>
+      <th><label for="state">State</label></th>
+      <td><input type="text" id="state" name="state" size="65"></td>
+      </tr>
+      <tr>
+        <th><label for="country">Country</label></th>
+        <td><input list="country" name="country" placeholder="Choose your country">
+          <datalist id="country">
+            <option value="India">
+            <option value="USA">
+            <option value="Russia">
+            <option value="United Kingdom">
+            <option value="Japan">
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="lang">Languages Known</label></th>
+        <td><input type="checkbox" id="lang1" name="lang1" value="English">
+          <label for="lang1">English</label>
+          <input type="checkbox" id="lang2" name="lang2" value="Kannada">
+          <label for="lang2">Kannada</label>
+          <input type="checkbox" id="lang3" name="lang3" value="Hindi">
+          <label for="lang3">Hindi</label>
+          <input type="checkbox" id="lang4" name="lang4" value="Telugu">
+          <label for="lang4">Telugu</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="checkbox" id="check" name="check" required><label for="check">Hereby I declare all the given details are true.</label></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:right"><label>Log in to <a href="https://ethnus.com/">Ethnus</a> website</label></td>
+      </tr>
+    </table>
+    <br>
+    <pre>                                    <input type="submit" value="Register" style="align:center"></pre>
+  </form>
+
+</body>
+
+</html>
